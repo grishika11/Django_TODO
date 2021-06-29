@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {%load static%}
+  <title>Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <style>
+ul li{
+    display: inline-block;
+     padding: 8px;
+     margin-top: 9px;
+       background-color: #9ca69c;
+ }
+  ul li a{
+     text-decoration: none;
+     color: #000;
+     padding: 5px 20px;
+     font-weight: 700;
+     border: 1px solid transparent;
+     transition: 0.9s ease;
+   }
+    ul li a:hover{
+     background-color: #f7f2f4;
+     color: #000;
+    
+   }
+   </style>
+    
+<header>
+
+<div class="login_img">
+<ul>
+<li><a href="{% url 'index' %}">TASK</a></li> 
+  <li><a href="{% url 'dairy' %}">DEAR DAIRY</a></li>
+  
+
+   </ul>
+
+   </div>    
+        
+   </header>
+
+</body>
+</html>
+{% block body %}
+{% endblock %}
+
+
+
